@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 namespace StackAndQueue
 {
       class Program
-    {
+      {
         static void Main(string[] args)
         {
             Console.WriteLine("############Stack Operations################");
             Console.WriteLine("***1.Push operation***");
+            Console.WriteLine("***2.Peak and Pop operation***");
             Console.WriteLine("Enter the option");
             int num = Convert.ToInt32(Console.ReadLine());
             Stack stack = new Stack();
@@ -21,7 +22,14 @@ namespace StackAndQueue
                     stack.Push(70);
                     stack.Push(30);
                     stack.Push(56);
-                    stack. Show();
+                    stack.Show();
+                    break;
+                case 2:
+                    stack.Push(70);
+                    stack.Push(30);
+                    stack.Push(56);
+                    stack.Pop();
+                    stack.Show();                 
                     break;
                 default:
                     Console.WriteLine("Enter a valid option");
@@ -29,5 +37,5 @@ namespace StackAndQueue
             }
             Console.ReadLine();
         }
-    }
+      }
 }
