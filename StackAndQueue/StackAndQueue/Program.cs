@@ -52,6 +52,13 @@ namespace StackAndQueue
                                     q.Enqueue(70);
                                     q. Show();
                                     break;
+                                case 2:
+                                    q.Enqueue(56);
+                                    q.Enqueue(30);
+                                    q.Enqueue(70);
+                                    q.Dequeue();
+                                    q. Show();
+                                    break;
                                 default:
                                     Console.WriteLine("Enter a valid option");
                                     break;
